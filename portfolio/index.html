@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd. Rizwan - Professional Fitness Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="dumbbell">
+                <div class="weight left"></div>
+                <div class="bar"></div>
+                <div class="weight right"></div>
+            </div>
+            <div class="loading-text">LOADING FITNESS</div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+    
+    <!-- Navigation -->
+    <nav class="vertical-nav">
+        <div class="nav-items">
+            <a href="#home" class="nav-item active" data-tooltip="Home">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#about" class="nav-item" data-tooltip="About">
+                <i class="fas fa-user"></i>
+            </a>
+            <a href="#services" class="nav-item" data-tooltip="Services">
+                <i class="fas fa-dumbbell"></i>
+            </a>
+            <a href="#gallery" class="nav-item" data-tooltip="Gallery">
+                <i class="fas fa-images"></i>
+            </a>
+            
+            <a href="#contact" class="nav-item" data-tooltip="Contact">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        
+        <div class="social-icons">
+            <a href="#" class="social-icon" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon" data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/918707681098" class="social-icon" data-tooltip="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="social-icon" data-tooltip="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Reference Style) -->
+    <section id="home" class="hero-section ref-hero">
+        <!-- Background smoke + gradient -->
+        <div class="hero-bg-smoke"></div>
+        <div class="hero-bg-gradient"></div>
+
+        <!-- Left hero rail removed to avoid duplication with global vertical nav -->
+
+        <!-- Huge stamped text -->
+        <div class="hero-stamp" aria-hidden="true">ELITE FITNESS</div>
+
+        <!-- Slider Container -->
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <!-- Center trainer image -->
+                <img class="hero-trainer" src="assets/WhatsApp Image 2025-08-13 at 3.08.02 PM.jpeg" alt="Mohd. Rizwan - Professional Fitness Trainer"/>
+
+                <!-- Right info card -->
+                <div class="hero-rightcard">
+                    <h4>Transform Your Fitness</h4>
+                    <p>
+                        Elite Personal Trainer with 5+ years of health & wellness expertise. Specializing in
+                        customized training programs, nutrition plans, and holistic fitness solutions to help you
+                        achieve your ultimate physical potential.
+                    </p>
+                    <a href="#contact" class="more-btn">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <!-- Center trainer image -->
+                <img class="hero-trainer" src="assets/WhatsApp Image 2025-08-13 at 3.08.03 PM (1).jpeg" alt="Mohd. Rizwan - Fitness Training"/>
+
+                <!-- Right info card -->
+                <div class="hero-rightcard">
+                    <h4>Personalized Training</h4>
+                    <p>
+                        Custom workout plans designed specifically for your body type, fitness level, and goals.
+                        Experience the difference with one-on-one coaching and personalized attention to detail.
+                    </p>
+                    <a href="#services" class="more-btn">View Programs</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <!-- Center trainer image -->
+                <img class="hero-trainer" src="assets/WhatsApp Image 2025-08-13 at 3.08.04 PM.jpeg" alt="Mohd. Rizwan - Nutrition Coaching"/>
+
+                <!-- Right info card -->
+                <div class="hero-rightcard">
+                    <h4>Nutrition & Wellness</h4>
+                    <p>
+                        Comprehensive nutrition plans that complement your fitness journey. Learn how to fuel
+                        your body properly for maximum results and sustainable lifestyle changes.
+                    </p>
+                    <a href="#contact" class="more-btn">Start Today</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side bullets -->
+        <div class="hero-bullets">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">About</span>
+                <span class="title-highlight">Me</span>
+            </h2>
+            
+            <div class="about-content">
+                <div class="profile-image-container">
+                    <div class="neon-frame">
+                        <img src="assets/WhatsApp Image 2025-08-13 at 3.08.03 PM.jpeg" alt="Mohd. Rizwan" class="profile-image">
+                    </div>
+                </div>
+                
+                <div class="personal-details">
+                    <div class="detail-card">
+                        <div class="detail-item">
+                            <i class="fas fa-user neon-icon"></i>
+                            <span class="detail-label">Name:</span>
+                            <span class="detail-value">Mohd. Rizwan</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt neon-icon"></i>
+                            <span class="detail-label">Address:</span>
+                            <span class="detail-value">House No: 11/270 Souterganj, Kanpur – 208001</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone neon-icon"></i>
+                            <span class="detail-label">Mobile:</span>
+                            <span class="detail-value">8707681098</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-birthday-cake neon-icon"></i>
+                            <span class="detail-label">Date of Birth:</span>
+                            <span class="detail-value">12 June 1998</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-male neon-icon"></i>
+                            <span class="detail-label">Father's Name:</span>
+                            <span class="detail-value">Late Babu Khan</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-heart neon-icon"></i>
+                            <span class="detail-label">Marital Status:</span>
+                            <span class="detail-value">Unmarried</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-flag neon-icon"></i>
+                            <span class="detail-label">Nationality:</span>
+                            <span class="detail-value">Indian</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-language neon-icon"></i>
+                            <span class="detail-label">Languages:</span>
+                            <span class="detail-value">Hindi, English</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Objective Section -->
+    <section id="objective" class="objective-section">
+        <div class="container">
+            <div class="objective-card">
+                <h3 class="card-title">Career Objective</h3>
+                <p class="objective-text">
+                    Dedicated and passionate Personal Trainer seeking to inspire and guide individuals 
+                    towards healthier lifestyles through effective training programs and motivation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Qualification Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Academic</span>
+                <span class="title-highlight">Qualification</span>
+            </h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>10th Passed</h4>
+                        <p>U.P. Board, 2014</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>12th Passed</h4>
+                        <p>U.P. Board, 2016</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>B.A. Passed</h4>
+                        <p>CSJM University, 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Knowledge Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Extra Knowledge &</span>
+                <span class="title-highlight">Achievements</span>
+            </h2>
+            
+            <div class="achievements-grid">
+                <div class="achievement-item" data-count="100">
+                    <div class="achievement-icon">
+                        <i class="fas fa-laptop-code neon-icon"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>Computer Applications</h4>
+                        <p>Basic knowledge of Computer Applications</p>
+                        <div class="achievement-badge">CERTIFIED</div>
+                    </div>
+                </div>
+                
+                <div class="achievement-item" data-count="250">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy neon-icon"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>Body Building</h4>
+                        <p>Participated in Body Building Tournament</p>
+                        <div class="achievement-badge">CHAMPION</div>
+                    </div>
+                </div>
+                
+                <div class="achievement-item" data-count="180">
+                    <div class="achievement-icon">
+                        <i class="fas fa-dumbbell neon-icon"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>Weight Lifting</h4>
+                        <p>Participated in Weight Lifting Tournament</p>
+                        <div class="achievement-badge">EXPERT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Work</span>
+                <span class="title-highlight">Experience</span>
+            </h2>
+            
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-duration">2 Years</div>
+                    <h4>Fitness Trainer</h4>
+                    <p>Universal Gym</p>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-duration">3 Years</div>
+                    <h4>Fitness Trainer</h4>
+                    <p>Fitness Planet</p>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-duration">1 Year</div>
+                    <h4>Fitness Trainer</h4>
+                    <p>FIT Y7 by M.S. Dhoni</p>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-duration">6 Months</div>
+                    <h4>Personal Bouncer</h4>
+                    <p>Security Services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Training</span>
+                <span class="title-highlight">Gallery</span>
+            </h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/WhatsApp Image 2025-08-13 at 3.08.02 PM.jpeg" alt="Professional Fitness Training Session">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/WhatsApp Image 2025-08-13 at 3.08.03 PM (1).jpeg" alt="Gym Workout Training">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/WhatsApp Image 2025-08-13 at 3.08.03 PM.jpeg" alt="Personal Training Session">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/WhatsApp Image 2025-08-13 at 3.08.04 PM (1).jpeg" alt="Fitness Coaching">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/WhatsApp Image 2025-08-13 at 3.08.04 PM (2).jpeg" alt="Strength Training">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/WhatsApp Image 2025-08-13 at 3.08.04 PM.jpeg" alt="Group Training Session">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/WhatsApp Image 2025-08-13 at 3.08.05 PM (1).jpeg" alt="Outdoor Fitness Training">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/WhatsApp Image 2025-08-13 at 3.08.05 PM.jpeg" alt="Professional Workout Session">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">My</span>
+                <span class="title-highlight">Services</span>
+            </h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Personal Training</h3>
+                    <p>One-on-one customized workout sessions tailored to your fitness goals and body type.</p>
+                    <div class="service-price">₹2000/session</div>
+                    <div class="service-actions">
+                        <a href="#contact" class="service-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Training</h3>
+                    <p>High-energy group fitness classes that motivate and challenge you alongside others.</p>
+                    <div class="service-price">₹1200/session</div>
+                    <div class="service-actions">
+                        <a href="#contact" class="service-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Nutrition Planning</h3>
+                    <p>Personalized diet plans and nutrition guidance to complement your fitness journey.</p>
+                    <div class="service-price">₹1500/month</div>
+                    <div class="service-actions">
+                        <a href="#contact" class="service-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Online Coaching</h3>
+                    <p>Virtual training sessions and guidance from the comfort of your home.</p>
+                    <div class="service-price">₹1000/session</div>
+                    <div class="service-actions">
+                        <a href="#contact" class="service-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Get In</span>
+                <span class="title-highlight">Touch</span>
+            </h2>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" action="https://formsubmit.co/rizwan.fitness@gmail.com" method="POST">
+                        <!-- FormSubmit configuration -->
+                        <input type="hidden" name="_subject" value="New message from Mohd. Rizwan Portfolio" />
+                        <input type="hidden" name="_template" value="table" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_next" value="/thank-you.html" />
+
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone neon-icon"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8707681098</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope neon-icon"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>rizwan.fitness@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp neon-icon"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+91 8707681098</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt neon-icon"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Souterganj, Kanpur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mohd. Rizwan - Professional Fitness Trainer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
